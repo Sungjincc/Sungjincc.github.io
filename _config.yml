@@ -1,18 +1,18 @@
 title: 최성진
 description: Web & Security Engineer
-site_title: '@abhn - Abhishek Nagekar'
+site_title: '최성진 - 포트폴리오'
 
 # Build settings
 markdown: kramdown
 exclude: [vendor/ruby]
 
 # Personalization
-github_username: abhn
-blog_url: "https://Sungjincc.github.io/"
+github_username: Sungjincc
+blog_url: https://Sungjincc.github.io/
 email: chltjdwls294@naver.com
-keybase_username: abhn
-twitter_username: abhn_
-reddit_username: abhn
+keybase_username: 최성진
+twitter_username: 최성진
+reddit_username: 최성진
 
 # absolute or relative
 profile_picture: assets/images/pp.jpg
