@@ -1,4 +1,197 @@
----
-layout: default
-title: 최성진
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최성진 - 안드로이드 앱 개발자</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/css/hint.base.min.css">
+    <link rel="stylesheet" href="vendor/css/semi-transparent-buttons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/progress.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Meta -->
+    <meta name="description" content="안드로이드 앱 개발자 최성진의 포트폴리오">
+    <meta name="keywords" content="안드로이드, 앱개발, Android, 최성진, Kotlin, Java">
+    
+    <!-- Background -->
+    <style>
+        body {
+            background: linear-gradient(-45deg, #2c3e50, #34495e, #2c3e50, #1a252f);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 네비게이션 -->
+    <section class="head" id="nav">
+        <!-- 네비게이션 메뉴를 오른쪽 상단에 고정 -->
+        <div class="head-menu-wrap">
+            <a class="semi-transparent-button with-border nav-links" href="#about">ABOUT</a>
+            <a class="semi-transparent-button with-border nav-links" href="#skills">SKILLS</a>
+            <a class="semi-transparent-button with-border nav-links" href="#projects">PROJECT</a>
+            <a class="semi-transparent-button with-border nav-links" href="#" onclick="toggleLanguage()">언어변경</a>
+        </div>
+        
+        <div class="head-inner-wrap">
+            <div class="profile-pic-div animated">
+                <a href="#about" class="profile-pic-link"><img src="assets/images/sungjin.jpg" class="profile-pic"/></a>
+            </div>
+            <div class="head-name head-title animated" id="head-name">최성진</div>
+            <div class="head-punchline animated">안드로이드 앱 개발자</div>
+        </div>
+    </section>
+
+    <!-- About 섹션 -->
+    <div class="section-wrapper">
+        <section class="section about" id="about">
+            <div id="about-text">
+                <div class="section-heading">About</div>
+                <p class="paragraph-text justify-text">
+                    안녕하세요! 안드로이드 앱 개발자 최성진입니다. 모바일 애플리케이션 개발에 대한 열정을 가지고 있으며, 사용자가 직관적이고 편리하게 사용할 수 있는 앱을 만드는 것을 목표로 합니다. Java와 Kotlin을 활용한 네이티브 안드로이드 개발부터 크로스 플랫폼 개발까지 다양한 경험을 쌓아왔습니다.
+                </p>
+                <p class="paragraph-text justify-text">
+                    새로운 기술과 트렌드에 관심이 많아 지속적으로 학습하고 있으며, 특히 Material Design과 최신 Android Architecture Components를 활용한 앱 개발에 집중하고 있습니다. 사용자 경험(UX)을 중시하며, 성능 최적화와 안정성을 고려한 코드 작성을 지향합니다.
+                </p>
+                <p class="paragraph-text justify-text">
+                    제가 개발한 프로젝트들은 <a href="https://github.com/Sungjincc">GitHub</a>에서 확인하실 수 있으며, 개발 관련 내용을 블로그에 기록하고 있습니다. 연락처는 페이지 <span class="extra-link"><a href="#extra">하단</a></span>에서 확인하실 수 있습니다.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills 섹션 -->
+    <div class="section-wrapper">
+        <section class="section skills" id="skills">
+            <div>
+                <div class="section-heading" id="skills-text">Skills</div>
+
+                <div class="skills-grid">
+                    <div class="what-i-do">
+                        <h3 class="center-align skills-subsection">Summary</h3>
+                        <p class="paragraph-text center-align">
+                            안드로이드 네이티브 앱 개발에 특화된 개발자입니다. 사용자 중심의 모바일 애플리케이션을 만들고, 최신 안드로이드 개발 기술과 아키텍처를 활용하여 안정적이고 성능이 우수한 앱을 개발합니다.
+                        </p>
+                    </div>
+                    <div class="technical-skills">
+                        <h3 class="center-align skills-subsection">Technical</h3>
+                        <div class="progress-bars">
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #4CAF50;"><span>Kotlin</span></div>
+                                <div class="skillbar-bar" style="background: #66BB6A;"></div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #FF9800;"><span>Java</span></div>
+                                <div class="skillbar-bar" style="background: #FFB74D;"></div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #2196F3;"><span>Android Studio</span></div>
+                                <div class="skillbar-bar" style="background: #42A5F5"></div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #9C27B0;"><span>XML Layout</span></div>
+                                <div class="skillbar-bar" style="background: #BA68C8;"></div>
+                            </div>
+                            
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #F44336;"><span>Firebase</span></div>
+                                <div class="skillbar-bar" style="background: #EF5350;"></div>
+                            </div>
+                            
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #795548"><span>SQLite</span></div>
+                                <div class="skillbar-bar" style="background: #A1887F;"></div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #607D8B"><span>Git & GitHub</span></div>
+                                <div class="skillbar-bar" style="background: #78909C"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects 섹션 -->
+    <div class="section-wrapper">
+        <section class="section projects" id="projects">
+            <div class="full-width">
+                <div class="section-heading" id="featured-projects-text">Projects</div>
+                
+                <div class="project-technologies">
+                    <a id="featured" class="semi-transparent-button with-border white-button" onclick="selected('featured')">주요 프로젝트</a>
+                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">전체</a>
+                    <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('native')">Android</a>
+                    <a id="utility" class="semi-transparent-button with-border white-button" onclick="selected('utility')">유틸리티</a>
+                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">보안</a>
+                    <a id="education" class="semi-transparent-button with-border white-button" onclick="selected('education')">교육</a>
+                </div>
+
+                <div class="projects-wrapper">
+                <!-- 프로젝트들이 JavaScript로 채워집니다 -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact 섹션 -->
+    <div class="section-wrapper">
+        <section class="section extra" id="extra">
+            <div>
+                <div class="section-heading" id="chat-text">연락처</div>
+                <p class="paragraph-text justify-text">
+                    안드로이드 개발 관련 프로젝트나 협업에 관심이 있으시다면 언제든지 연락 주세요! 새로운 기술에 대한 이야기나 개발 경험을 나누는 것을 좋아합니다.
+                </p>
+                <p class="paragraph-text justify-text">
+                    언제든지 편하게 연락주세요: <a href="mailto:chltjdwls294@naver.com">chltjdwls294@naver.com</a>. 빠른 시일 내에 답변드리겠습니다.
+                </p>
+                <p class="paragraph-text justify-text">
+                    제 GitHub에서 더 많은 프로젝트와 코드를 확인하실 수 있습니다.
+                </p>
+                <div class="extra-links">
+                    <span class="hint--bottom bottom-link" aria-label="이메일">
+                        <a href="mailto:chltjdwls294@naver.com"><i class="head-icon fas fa-envelope"></i></a>
+                    </span>
+                    <span class="hint--bottom bottom-link" aria-label="GitHub">
+                        <a href="https://github.com/Sungjincc"><i class="head-icon fab fa-github"></i></a>
+                    </span>
+                    <span class="hint--bottom bottom-link" aria-label="블로그">
+                        <a href="https://Sungjincc.github.io/"><i class="head-icon fas fa-rss"></i></a>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="vendor/js/jquery-3.3.1.js"></script>
+    <script src="vendor/js/jquery.smooth-scroll.js"></script>
+    <script src="vendor/js/css-polyfills.min.js"></script>
+    <script src="vendor/js/flexibility.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>
