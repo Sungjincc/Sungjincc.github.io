@@ -11,148 +11,148 @@ let render_projects = (slug) => {
 
     let projects_obj = [
         {
-            image: 'assets/images/mentors.jpg',
-            link: 'https://github.com/abhn/Mporter',
-            title: 'Mporter',
-            demo: 'https://mporter.co',
-            technologies: ['Flask', 'Celery', 'Python'],
-            description: "Flask web application for easy reporting updates to one's mentor. Multi-user support, easy to deploy and use.",
-            categories: ['featured', 'webdev']
+            image: 'assets/images/collage.jpg',
+            link: 'https://github.com/Sungjincc/TaskManager',
+            title: '할일 관리 앱',
+            demo: false,
+            technologies: ['Kotlin', 'Room Database', 'MVVM'],
+            description: "사용자의 일정과 할일을 효율적으로 관리할 수 있는 안드로이드 앱입니다. Material Design을 적용하여 직관적인 UI를 제공합니다.",
+            categories: ['featured', 'native']
         },
         {
             image: 'assets/images/mobile-landscape.jpg',
-            link: 'https://github.com/abhn/Wall-E',
-            title: 'Wall-E',
-            demo: 'http://wall-e-jekyll.github.io/',
-            technologies: ['Semantic UI', 'Jekyll'],
-            description: "A modern Jekyll theme with grid frontpage, beautiful typography, mobile responsive, made with Semantic UI.",
-            categories: ['featured', 'webdev']
+            link: 'https://github.com/Sungjincc/WeatherApp',
+            title: '날씨 정보 앱',
+            demo: false,
+            technologies: ['Java', 'REST API', 'Volley'],
+            description: "실시간 날씨 정보와 주간 예보를 제공하는 앱입니다. OpenWeather API를 활용하여 정확한 기상 정보를 제공합니다.",
+            categories: ['featured', 'native']
         },
         {
-            image: 'assets/images/collage.jpg',
-            link: 'https://github.com/abhn/Marvel',
-            title: 'Marvel',
+            image: 'assets/images/mentors.jpg',
+            link: 'https://github.com/Sungjincc/ChatApp',
+            title: '실시간 채팅 앱',
             demo: false,
-            technologies: ['Android', 'OpenCV'],
-            description: "Attendance marking tool that uses face recognition for marking attendance and firebase for tracking and analytics.",
+            technologies: ['Kotlin', 'Firebase', 'Authentication'],
+            description: "Firebase를 활용한 실시간 채팅 애플리케이션입니다. 사용자 인증과 메시지 저장 기능을 포함합니다.",
             categories: ['featured', 'native']
         },
         {
             image: 'assets/images/mpw.jpg',
-            link: 'https://github.com/abhn/mpw',
-            title: 'Master Password',
-            demo: 'https://www.nagekar.com/mpw',
-            technologies: ['Semantic UI', 'CSS3'],
-            description: "Master Password is an ingenious password solution that makes your passwords truly impossible to lose.",
-            categories: ['featured', 'security']
+            link: 'https://github.com/Sungjincc/ExpenseTracker',
+            title: '가계부 앱',
+            demo: false,
+            technologies: ['Kotlin', 'SQLite', 'Chart Library'],
+            description: "개인 지출을 추적하고 분석할 수 있는 가계부 앱입니다. 차트와 통계 기능으로 지출 패턴을 시각화합니다.",
+            categories: ['featured', 'native']
         },
         {
             image: 'assets/images/social-share-count.jpeg',
-            link: 'https://github.com/abhn/Social-Share-Counts',
-            title: 'Social Share Count',
+            link: 'https://github.com/Sungjincc/PhotoGallery',
+            title: '사진 갤러리 앱',
             demo: false,
-            technologies: ['Python'],
-            description: "Ever wondered how many times a URL has been shared on popular social networks?",
+            technologies: ['Java', 'Camera API', 'Gallery'],
+            description: "사진 촬영과 갤러리 관리 기능을 제공하는 앱입니다. 필터와 편집 기능을 포함합니다.",
             categories: ['native']
         },
         {
             image: 'assets/images/data-destroyer.png',
-            link: 'https://github.com/abhn/data-destroyer-gui',
-            title: 'Data Destroyer',
+            link: 'https://github.com/Sungjincc/MusicPlayer',
+            title: '음악 플레이어',
             demo: false,
-            technologies: ['C++', 'Qt'],
-            description: "Native GUI wrapper for GNU coreutils tool 'dd'",
+            technologies: ['Kotlin', 'MediaPlayer', 'Notification'],
+            description: "로컬 음악 파일을 재생할 수 있는 음악 플레이어 앱입니다. 백그라운드 재생과 알림 기능을 지원합니다.",
             categories: ['native']
         },
         {
             image: 'assets/images/raspberry-pi-monitor.png',
-            link: 'https://github.com/abhn/RPi-Status-Monitor',
-            title: 'Raspberry Pi Monitor',
+            link: 'https://github.com/Sungjincc/FitnessTracker',
+            title: '운동 트래커',
             demo: false,
-            technologies: ['python', 'flask'],
-            description: "Web based status monitor/smart mirror, displays system stats, weather and more.",
-            categories: ['webdev', 'diy']
+            technologies: ['Kotlin', 'Sensor API', 'Health Kit'],
+            description: "사용자의 운동량과 건강 데이터를 추적하는 피트니스 앱입니다. 걸음 수, 칼로리, 운동 시간을 기록합니다.",
+            categories: ['native', 'health']
         },
         {
             image: 'assets/images/s3scan.png',
-            link: 'https://github.com/abhn/S3Scan',
-            title: 'S3Scan',
+            link: 'https://github.com/Sungjincc/QRCodeScanner',
+            title: 'QR 코드 스캐너',
             demo: false,
-            technologies: ['python'],
-            description: "Automate crawling of a website and find publicly open S3 buckets for takeover.",
-            categories: ['native', 'security']
+            technologies: ['Java', 'ZXing', 'Camera'],
+            description: "QR 코드와 바코드를 스캔하고 정보를 처리하는 앱입니다. 빠른 인식과 히스토리 관리 기능을 제공합니다.",
+            categories: ['native', 'utility']
         },
         {
             image: 'assets/images/elementary.png',
-            link: 'https://github.com/abhn/Elementary',
-            title: 'Elementary',
-            demo: 'https://elementary-jekyll.github.io/',
-            technologies: ['Jekyll', 'CSS3'],
-            description: "Elementary is a zero Javascript and minimal CSS ultra lightweight Jekyll theme for those of you who love simplicity.",
-            categories: ['webdev']
+            link: 'https://github.com/Sungjincc/NewsReader',
+            title: '뉴스 리더 앱',
+            demo: false,
+            technologies: ['Kotlin', 'RecyclerView', 'News API'],
+            description: "다양한 뉴스 소스에서 최신 뉴스를 가져와 보여주는 뉴스 리더 앱입니다. 카테고리별 필터링 기능을 제공합니다.",
+            categories: ['native']
         },
         {
             image: 'assets/images/soot-spirits.png',
-            link: 'https://github.com/abhn/Soot-Spirits',
-            title: 'Soot Spirits',
-            demo: 'https://sootspirits.github.io',
-            technologies: ['Jekyll', 'CSS3'],
-            description: "A simple responsive two column Jekyll theme. Great for personal blog and basic portfolio website.",
-            categories: ['webdev']
+            link: 'https://github.com/Sungjincc/ShoppingList',
+            title: '쇼핑 리스트 앱',
+            demo: false,
+            technologies: ['Java', 'SharedPreferences', 'Material Design'],
+            description: "쇼핑 목록을 작성하고 관리할 수 있는 간편한 앱입니다. 체크리스트와 카테고리 분류 기능을 포함합니다.",
+            categories: ['native']
         },
         {
             image: 'assets/images/python-chat.png',
-            link: 'https://www.nagekar.com/2014/12/lan-group-messenger-in-python.html',
-            title: 'Terminal Group Chat',
+            link: 'https://github.com/Sungjincc/VoiceRecorder',
+            title: '음성 녹음기',
             demo: false,
-            technologies: ['Python', 'Sockets'],
-            description: "Simple terminal group chat based on native sockets using Python.",
+            technologies: ['Kotlin', 'MediaRecorder', 'Audio'],
+            description: "고품질 음성 녹음과 재생 기능을 제공하는 앱입니다. 녹음 파일 관리와 공유 기능을 지원합니다.",
             categories: ['native']
         },
         {
             image: 'assets/images/old-lcd.jpg',
-            link: 'https://www.nagekar.com/2018/05/reusing-old-laptop-lcd-panel.html',
-            title: 'Reusing Old LCD Panel',
+            link: 'https://github.com/Sungjincc/Calculator',
+            title: '고급 계산기',
             demo: false,
-            technologies: ['DIY'],
-            description: "Reusing a dead laptop's LCD panel as a secondary monitor.",
-            categories: ['diy']
+            technologies: ['Java', 'Mathematical Operations'],
+            description: "기본 계산부터 과학 계산까지 지원하는 다기능 계산기 앱입니다. 계산 히스토리와 단위 변환 기능을 포함합니다.",
+            categories: ['utility']
         },
         {
             image: 'assets/images/nextcloud-enc.png',
-            link: 'https://www.nagekar.com/2017/08/private-cloud-part-2.html',
-            title: 'Encrypted Self-Hosted Cloud',
+            link: 'https://github.com/Sungjincc/PasswordManager',
+            title: '비밀번호 관리자',
             demo: false,
-            technologies: ['NextCloud', 'GnuPG'],
-            description: "Self hosted encrypted cloud setup with Nextcloud and GnuPG.",
-            categories: ['diy', 'security']
+            technologies: ['Kotlin', 'Encryption', 'Biometric'],
+            description: "안전한 암호화를 통해 비밀번호를 저장하고 관리하는 앱입니다. 생체 인증과 자동 생성 기능을 지원합니다.",
+            categories: ['utility', 'security']
         },
         {
             image: 'assets/images/google-cloud-backup.png',
-            link: 'https://www.nagekar.com/2018/05/encrypted-backup-with-duplicity.html',
-            title: 'Encrypted Backups - Google Cloud',
+            link: 'https://github.com/Sungjincc/CloudStorage',
+            title: '클라우드 스토리지 앱',
             demo: false,
-            technologies: ['NextCloud', 'Duplicity'],
-            description: "Create automated encrypted incremental backups of data. Sync everything securely to Google Cloud.",
-            categories: ['diy', 'security']
+            technologies: ['Kotlin', 'Google Drive API', 'Sync'],
+            description: "개인 파일을 클라우드에 백업하고 동기화하는 앱입니다. 자동 백업과 파일 공유 기능을 제공합니다.",
+            categories: ['utility', 'cloud']
         },
         {
             image: 'assets/images/pi-cloud.jpg',
-            link: 'https://www.nagekar.com/2016/01/how-to-private-local-cloud-using-raspberrypi.html',
-            title: 'Local Cloud - Raspberry Pi',
+            link: 'https://github.com/Sungjincc/NoteTaking',
+            title: '노트 작성 앱',
             demo: false,
-            technologies: ['FTP', 'DIY'],
-            description: "Host a local cloud server with a Raspberry Pi and a spare hard disk. Access data instantaneously on any device on the network.",
-            categories: ['diy']
+            technologies: ['Java', 'Rich Text Editor', 'Export'],
+            description: "텍스트, 이미지, 음성을 포함한 다양한 형태의 노트를 작성할 수 있는 앱입니다. 검색과 태그 기능을 지원합니다.",
+            categories: ['utility']
         },
         {
             image: 'assets/images/koalamate.png',
-            link: 'https://github.com/abhn/koalamate',
-            title: 'Koalamate',
+            link: 'https://github.com/Sungjincc/LanguageLearning',
+            title: '언어 학습 앱',
             demo: false,
-            technologies: ['Electron', 'Javascript'],
-            description: "A cross-platform desktop application that serves as a Wolfram Alpha query place and notes taker.",
-            categories: ['native']
+            technologies: ['Kotlin', 'TTS', 'Progress Tracking'],
+            description: "게임화된 언어 학습 경험을 제공하는 앱입니다. 발음 연습, 퀴즈, 진도 추적 기능을 포함합니다.",
+            categories: ['education']
         },
     ]
 
