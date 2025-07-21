@@ -4,7 +4,26 @@ site_title: '최성진 - 포트폴리오'
 
 # Build settings
 markdown: kramdown
-exclude: [vendor/ruby]
+highlighter: rouge
+permalink: /:title/
+
+# GitHub Pages 설정
+repository: Sungjincc/Sungjincc.github.io
+url: "https://Sungjincc.github.io"
+baseurl: ""
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files
+exclude: 
+  - vendor/ruby
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
 
 # Personalization
 github_username: Sungjincc
