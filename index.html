@@ -10,12 +10,103 @@
     <link rel="stylesheet" href="vendor/css/font-awesome.css">
     <link rel="stylesheet" href="vendor/css/hint.base.min.css">
     <link rel="stylesheet" href="vendor/css/semi-transparent-buttons.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=2">
     <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="assets/css/progress.css">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* 전체 배경을 흰색으로 변경 */
+        html, body {
+            background: #f8f9fa !important;
+        }
+        
+        /* 모든 섹션을 흰색 배경으로 통일 */
+        .section-wrapper {
+            background: #f8f9fa !important;
+        }
+        
+        .section-wrapper .section-heading {
+            color: #222 !important;
+        }
+        
+        .section-wrapper .paragraph-text {
+            color: #404040 !important;
+        }
+        
+        .section-wrapper .skills-subsection {
+            color: #222 !important;
+        }
+        
+        .section.about {
+            justify-content: center !important;
+            align-items: center !important;
+            max-width: 100% !important;
+            margin: 60px 0 !important;
+            padding: 40px 60px !important;
+            min-height: 600px !important;
+            height: auto !important;
+        }
+        
+        .section.skills {
+            justify-content: center !important;
+            align-items: center !important;
+            max-width: 100% !important;
+            margin: 60px 0 !important;
+            padding: 40px 60px !important;
+            min-height: 500px !important;
+            height: auto !important;
+        }
+
+        /* Skills 섹션 배경색 변경 */
+        .section-wrapper:has(.section.skills) {
+            background: #e8f4f8 !important;
+        }
+        
+        .section-heading {
+            font-size: 48px !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 3px !important;
+            text-align: center !important;
+            margin-bottom: 30px !important;
+            color: #222 !important;
+        }
+        
+        .about-content-grid {
+            display: grid !important;
+            grid-template-columns: 250px 1fr !important;
+            grid-gap: 50px !important;
+            align-items: start !important;
+            margin-bottom: 40px !important;
+        }
+        
+        .about-profile {
+            display: flex !important;
+            justify-content: flex-start !important;
+            width: 100% !important;
+        }
+        
+        .about-pic-div {
+            text-align: left !important;
+            width: 100% !important;
+        }
+        
+        .about-profile-pic {
+            width: 220px !important;
+            height: 220px !important;
+            border-radius: 50% !important;
+            border: solid 3px white !important;
+            object-fit: cover !important;
+            margin-left: 0 !important;
+        }
+    </style>
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -23,21 +114,6 @@
     <!-- Meta -->
     <meta name="description" content="안드로이드 앱 개발자 최성진의 포트폴리오">
     <meta name="keywords" content="안드로이드, 앱개발, Android, 최성진, Kotlin, Java">
-    
-    <!-- Background -->
-    <style>
-        body {
-            background: linear-gradient(-45deg, #2c3e50, #34495e, #2c3e50, #1a252f);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-        
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-    </style>
 </head>
 
 <body>
@@ -52,11 +128,16 @@
         </div>
         
         <div class="head-inner-wrap">
-            <div class="profile-pic-div animated">
-                <a href="#about" class="profile-pic-link"><img src="assets/images/sungjin.jpg" class="profile-pic"/></a>
-            </div>
-            <div class="head-name head-title animated" id="head-name">최성진</div>
+            <div class="head-name head-title animated" id="head-name">- 최성진 -</div>
             <div class="head-punchline animated">안드로이드 앱 개발자</div>
+            <div class="head-intro animated" style="color: #fff; margin-top: 25px; font-size: 18px; font-family: 'PT Sans', Arial, Helvetica, sans-serif; line-height: 1.6;">
+                안녕하세요.<br/>
+                사용자 입장의 안드로이드 앱 개발자<br/>
+                최성진입니다.
+            </div>
+            <div class="more-info-btn-wrap animated">
+                <a href="#about" class="more-info-btn">더 알아보기 ↓</a>
+            </div>
         </div>
     </section>
 
@@ -64,16 +145,106 @@
     <div class="section-wrapper">
         <section class="section about" id="about">
             <div id="about-text">
-                <div class="section-heading">About</div>
-                <p class="paragraph-text justify-text">
-                    안녕하세요! 안드로이드 앱 개발자 최성진입니다. 모바일 애플리케이션 개발에 대한 열정을 가지고 있으며, 사용자가 직관적이고 편리하게 사용할 수 있는 앱을 만드는 것을 목표로 합니다. Java와 Kotlin을 활용한 네이티브 안드로이드 개발부터 크로스 플랫폼 개발까지 다양한 경험을 쌓아왔습니다.
-                </p>
-                <p class="paragraph-text justify-text">
-                    새로운 기술과 트렌드에 관심이 많아 지속적으로 학습하고 있으며, 특히 Material Design과 최신 Android Architecture Components를 활용한 앱 개발에 집중하고 있습니다. 사용자 경험(UX)을 중시하며, 성능 최적화와 안정성을 고려한 코드 작성을 지향합니다.
-                </p>
-                <p class="paragraph-text justify-text">
-                    제가 개발한 프로젝트들은 <a href="https://github.com/Sungjincc">GitHub</a>에서 확인하실 수 있으며, 개발 관련 내용을 블로그에 기록하고 있습니다. 연락처는 페이지 <span class="extra-link"><a href="#extra">하단</a></span>에서 확인하실 수 있습니다.
-                </p>
+                <div class="section-heading" style="font-size: 48px !important; font-weight: 900 !important; text-transform: uppercase !important; letter-spacing: 3px !important; text-align: center !important; width: 100%;">About</div>
+                
+                <div style="display: flex; width: 100%; max-width: 1400px; margin: 0 auto; gap: 80px; align-items: flex-start;">
+                    <!-- 프로필 사진 및 개인 정보 영역 -->
+                    <div style="flex: 0 0 320px;">
+                                                    <!-- 통합된 개인 정보 카드 -->
+                            <div style="background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center;">
+                            <!-- 프로필 사진 -->
+                            <div style="margin-bottom: 25px;">
+                                <img src="assets/images/sungjin.jpg" style="width: 200px; height: 200px; border-radius: 50%; border: solid 3px white; object-fit: cover; display: block; margin: 0 auto;"/>
+                            </div>
+                            
+                            <!-- 개인 정보 -->
+                            <div style="text-align: left;">
+                                <div style="margin-bottom: 15px; display: flex; align-items: center;">
+                                    <i class="fas fa-user" style="color: #555; margin-right: 12px; width: 20px;"></i>
+                                    <div>
+                                        <strong style="color: #333;">이름</strong><br>
+                                        <span style="color: #666;">최성진</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; display: flex; align-items: center;">
+                                    <i class="fas fa-calendar-alt" style="color: #555; margin-right: 12px; width: 20px;"></i>
+                                    <div>
+                                        <strong style="color: #333;">생년월일</strong><br>
+                                        <span style="color: #666;">2000년 02월 11일</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; display: flex; align-items: center;">
+                                    <i class="fas fa-map-marker-alt" style="color: #555; margin-right: 12px; width: 20px;"></i>
+                                    <div>
+                                        <strong style="color: #333;">위치</strong><br>
+                                        <span style="color: #666;">용인특례시 기흥구</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px; display: flex; align-items: center;">
+                                    <i class="fas fa-phone" style="color: #555; margin-right: 12px; width: 20px;"></i>
+                                    <div>
+                                        <strong style="color: #333;">연락처</strong><br>
+                                        <span style="color: #666;">010-9253-2942</span>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 0; display: flex; align-items: center;">
+                                    <i class="fas fa-envelope" style="color: #555; margin-right: 12px; width: 20px;"></i>
+                                    <div>
+                                        <strong style="color: #333;">이메일</strong><br>
+                                        <span style="color: #666;">chltjdwls294@naver.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 학력 정보 영역 -->
+                    <div style="flex: 1; min-width: 600px;">
+                        <div class="education-section">
+                            <h3 class="education-title" style="display: flex; align-items: center;">
+                                <i class="fas fa-graduation-cap" style="color: #555; margin-right: 10px;"></i>
+                                학력
+                            </h3>
+                            <div class="education-item">
+                                <div class="education-details">
+                                    <div class="education-name">와룡고등학교</div>
+                                    <div class="education-date">2015.03 - 2018.02</div>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-details">
+                                    <div class="education-name">단국대학교 국제자유전공학부</div>
+                                    <div class="education-date">2018.03 - 2018.08</div>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-details">
+                                    <div class="education-name">단국대학교 소프트웨어학과</div>
+                                    <div class="education-date">2018.09 - 2026.02</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bootcamp-section">
+                            <h3 class="education-title" style="display: flex; align-items: center;">
+                                <i class="fas fa-book" style="color: #555; margin-right: 10px;"></i>
+                                교육
+                            </h3>
+                            <div class="education-item">
+                                <div class="education-details">
+                                    <div class="education-name">빅데이터 분석 및 인공지능 처리를 위한 SW융합개발자 양성 과정</div>
+                                    <div class="education-date">2025.03 - 2025.06</div>
+                                </div>
+                                <div class="education-school">티맥스티베로</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -81,52 +252,111 @@
     <!-- Skills 섹션 -->
     <div class="section-wrapper">
         <section class="section skills" id="skills">
-            <div>
-                <div class="section-heading" id="skills-text">Skills</div>
+            <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
+                <div class="section-heading" style="font-size: 48px !important; font-weight: 900 !important; text-transform: uppercase !important; letter-spacing: 3px !important; text-align: center !important; margin-bottom: 50px !important;">Skills</div>
 
-                <div class="skills-grid">
-                    <div class="what-i-do">
-                        <h3 class="center-align skills-subsection">Summary</h3>
-                        <p class="paragraph-text center-align">
-                            안드로이드 네이티브 앱 개발에 특화된 개발자입니다. 사용자 중심의 모바일 애플리케이션을 만들고, 최신 안드로이드 개발 기술과 아키텍처를 활용하여 안정적이고 성능이 우수한 앱을 개발합니다.
-                        </p>
+                <!-- 스킬 카테고리 그리드 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 25px; max-width: 1400px; margin: 0 auto;">
+                    <!-- 주력 기술 스택 -->
+                    <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                            주력 기술
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Kotlin</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Java</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xml/xml-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">XML</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="technical-skills">
-                        <h3 class="center-align skills-subsection">Technical</h3>
-                        <div class="progress-bars">
-                            <div class="skillbar clearfix " data-percent="90%">
-                                <div class="skillbar-title" style="background: #4CAF50;"><span>Kotlin</span></div>
-                                <div class="skillbar-bar" style="background: #66BB6A;"></div>
-                            </div>
 
-                            <div class="skillbar clearfix " data-percent="85%">
-                                <div class="skillbar-title" style="background: #FF9800;"><span>Java</span></div>
-                                <div class="skillbar-bar" style="background: #FFB74D;"></div>
+                    <!-- 학습 기술 -->
+                    <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                            학습 기술
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Python</span>
                             </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">C</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">HTML</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">CSS</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">JavaScript</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">MySQL</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Oracle</span>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="skillbar clearfix " data-percent="85%">
-                                <div class="skillbar-title" style="background: #2196F3;"><span>Android Studio</span></div>
-                                <div class="skillbar-bar" style="background: #42A5F5"></div>
+                    <!-- 협업 도구 -->
+                    <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                            협업 도구
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">GitHub</span>
                             </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Notion</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Figma</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <i class="fab fa-discord" style="width: 30px; height: 30px; font-size: 30px; color: #5865F2; display: flex; align-items: center; justify-content: center;"></i>
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Discord</span>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="skillbar clearfix " data-percent="80%">
-                                <div class="skillbar-title" style="background: #9C27B0;"><span>XML Layout</span></div>
-                                <div class="skillbar-bar" style="background: #BA68C8;"></div>
+                    <!-- 개발 환경 -->
+                    <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                            개발 환경
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Android Studio</span>
                             </div>
-                            
-                            <div class="skillbar clearfix " data-percent="75%">
-                                <div class="skillbar-title" style="background: #F44336;"><span>Firebase</span></div>
-                                <div class="skillbar-bar" style="background: #EF5350;"></div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">Eclipse</span>
                             </div>
-                            
-                            <div class="skillbar clearfix " data-percent="70%">
-                                <div class="skillbar-title" style="background: #795548"><span>SQLite</span></div>
-                                <div class="skillbar-bar" style="background: #A1887F;"></div>
-                            </div>
-
-                            <div class="skillbar clearfix " data-percent="70%">
-                                <div class="skillbar-title" style="background: #607D8B"><span>Git & GitHub</span></div>
-                                <div class="skillbar-bar" style="background: #78909C"></div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 6px 0;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" style="width: 30px; height: 30px;">
+                                <span style="font-size: 14px; font-weight: 500; color: #333;">IntelliJ</span>
                             </div>
                         </div>
                     </div>
