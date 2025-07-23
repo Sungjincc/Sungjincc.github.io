@@ -67,6 +67,285 @@
         /* Skills 섹션 배경색 변경 */
         .section-wrapper:has(.section.skills) {
             background: #e8f4f8 !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        
+        /* Projects 섹션 배경색 변경 */
+        .section-wrapper:has(.section.projects) {
+            background: #e8f5e8 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* 모든 section-wrapper 간격 완전 제거 */
+        .section-wrapper {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* Android Projects Mobile Design */
+        .android-projects-container {
+            max-width: none;
+            margin: 0;
+            padding: 20px 60px 60px 60px;
+            width: 100%;
+            text-align: left !important;
+        }
+        
+        .mobile-project-card {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin: 80px 0;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .mobile-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-project-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        /* 스마트폰 모형 */
+        .mobile-mockup {
+            flex: 0 0 280px;
+        }
+        
+        .phone-frame {
+            width: 280px;
+            height: 580px;
+            background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+            border-radius: 45px;
+            padding: 4px;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            margin: 0 !important;
+            margin-left: 0 !important;
+            text-align: left !important;
+            backdrop-filter: blur(10px);
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border-radius: 41px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+        
+        .phone-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 25px;
+            background: #f5f5f5;
+        }
+        
+        .phone-button {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 5px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+            border-radius: 3px;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* 프로젝트 상세 정보 */
+        .project-details {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .project-header {
+            margin-bottom: 20px;
+        }
+        
+        .project-badges {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .android-badge {
+            background: linear-gradient(135deg, #3DDC84, #07C160);
+        }
+        
+        .capstone-badge {
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+        }
+        
+        .award-badge {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #333 !important;
+        }
+        
+        .team-badge {
+            background: linear-gradient(135deg, #9C27B0, #673AB7);
+        }
+        
+        .project-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        
+        .tech-stack-android h4,
+        .key-features h4 {
+            color: #1976D2;
+            margin: 20px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .tech-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-chip {
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+        }
+        
+        .tech-chip.kotlin {
+            background: linear-gradient(135deg, #7F52FF, #0066CC);
+        }
+        
+        .tech-chip.compose {
+            background: linear-gradient(135deg, #4285F4, #0F9D58);
+        }
+        
+        .tech-chip.room {
+            background: linear-gradient(135deg, #FF5722, #E91E63);
+        }
+        
+        .tech-chip.retrofit {
+            background: linear-gradient(135deg, #48CAE4, #0077B6);
+        }
+        
+        .tech-chip.coroutine {
+            background: linear-gradient(135deg, #9C27B0, #673AB7);
+        }
+        
+        .tech-chip.naver {
+            background: linear-gradient(135deg, #03C75A, #009639);
+        }
+        
+        .tech-chip.ocr {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        .tech-chip.jwt {
+            background: linear-gradient(135deg, #333333, #000000);
+        }
+        
+        .tech-chip.llm {
+            background: linear-gradient(135deg, #8E24AA, #5E35B1);
+        }
+        
+        .tech-chip.android {
+            background: linear-gradient(135deg, #3DDC84, #07C160);
+        }
+        
+        .tech-chip.mvvm {
+            background: linear-gradient(135deg, #FF6F00, #E65100);
+        }
+        
+        .tech-chip.coroutines {
+            background: linear-gradient(135deg, #9C27B0, #673AB7);
+        }
+        
+        .key-features ul {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .key-features li {
+            padding: 8px 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .project-links {
+            margin-top: 25px;
+        }
+        
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #24292e, #0d1117);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .github-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(36, 41, 46, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .android-projects-container > div {
+                flex-direction: column !important;
+                gap: 30px;
+                text-align: center;
+                margin: 60px 0 !important;
+            }
+            
+            .android-projects-container > div > div:first-child {
+                flex: none !important;
+            }
+            
+            .phone-frame {
+                width: 220px;
+                height: 440px;
+                border-radius: 35px;
+                padding: 3px;
+            }
+            
+            .phone-screen {
+                border-radius: 32px;
+            }
         }
         
         .section-heading {
@@ -121,10 +400,18 @@
     <section class="head" id="nav">
         <!-- 네비게이션 메뉴를 오른쪽 상단에 고정 -->
         <div class="head-menu-wrap">
-            <a class="semi-transparent-button with-border nav-links" href="#about">ABOUT</a>
-            <a class="semi-transparent-button with-border nav-links" href="#skills">SKILLS</a>
-            <a class="semi-transparent-button with-border nav-links" href="#projects">PROJECT</a>
-            <a class="semi-transparent-button with-border nav-links" href="#" onclick="toggleLanguage()">언어변경</a>
+                            <a class="semi-transparent-button with-border nav-links" href="#about">ABOUT</a>
+                <a class="semi-transparent-button with-border nav-links" href="#skills">SKILLS</a>
+                <a class="semi-transparent-button with-border nav-links" href="#projects">PROJECT</a>
+                <a class="semi-transparent-button with-border nav-links" href="#contact">CONTACT</a>
+                <div class="language-dropdown">
+                    <a class="semi-transparent-button with-border nav-links" href="javascript:void(0)" onclick="toggleLanguageDropdown()" id="language-btn">한국어</a>
+                    <div class="language-menu" id="language-menu">
+                        <a href="javascript:void(0)" onclick="changeLanguage('kr')">한국어</a>
+                        <a href="javascript:void(0)" onclick="changeLanguage('jp')">日本語</a>
+                        <a href="javascript:void(0)" onclick="changeLanguage('en')">English</a>
+                    </div>
+                </div>
         </div>
         
         <div class="head-inner-wrap">
@@ -207,23 +494,23 @@
                         <div class="education-section">
                             <h3 class="education-title" style="display: flex; align-items: center;">
                                 <i class="fas fa-graduation-cap" style="color: #555; margin-right: 10px;"></i>
-                                학력
+                                <span id="education-title">학력</span>
                             </h3>
                             <div class="education-item">
                                 <div class="education-details">
-                                    <div class="education-name">와룡고등학교</div>
+                                    <div class="education-name" id="high-school">와룡고등학교</div>
                                     <div class="education-date">2015.03 - 2018.02</div>
                                 </div>
                             </div>
                             <div class="education-item">
                                 <div class="education-details">
-                                    <div class="education-name">단국대학교 국제자유전공학부</div>
+                                    <div class="education-name" id="university-main">단국대학교 국제자유전공학부</div>
                                     <div class="education-date">2018.03 - 2018.08</div>
                                 </div>
                             </div>
                             <div class="education-item">
                                 <div class="education-details">
-                                    <div class="education-name">단국대학교 소프트웨어학과</div>
+                                    <div class="education-name" id="university-software">단국대학교 소프트웨어학과</div>
                                     <div class="education-date">2018.09 - 2026.02</div>
                                 </div>
                             </div>
@@ -232,14 +519,14 @@
                         <div class="bootcamp-section">
                             <h3 class="education-title" style="display: flex; align-items: center;">
                                 <i class="fas fa-book" style="color: #555; margin-right: 10px;"></i>
-                                교육
+                                <span id="bootcamp-title">교육</span>
                             </h3>
                             <div class="education-item">
                                 <div class="education-details">
-                                    <div class="education-name">빅데이터 분석 및 인공지능 처리를 위한 SW융합개발자 양성 과정</div>
+                                    <div class="education-name" id="bootcamp-name">빅데이터 분석 및 인공지능 처리를 위한 SW융합개발자 양성 과정</div>
                                     <div class="education-date">2025.03 - 2025.06</div>
                                 </div>
-                                <div class="education-school">티맥스티베로</div>
+                                <div class="education-school" id="company-name">티맥스티베로</div>
 
                             </div>
                         </div>
@@ -250,8 +537,8 @@
     </div>
 
     <!-- Skills 섹션 -->
-    <div class="section-wrapper">
-        <section class="section skills" id="skills">
+    <div class="section-wrapper" style="margin: 0 !important; padding: 0 !important;">
+        <section class="section skills" id="skills" style="margin: 60px 0 !important; padding: 40px 60px !important; min-height: auto !important;">
             <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <div class="section-heading" style="font-size: 48px !important; font-weight: 900 !important; text-transform: uppercase !important; letter-spacing: 3px !important; text-align: center !important; margin-bottom: 50px !important;">Skills</div>
 
@@ -366,62 +653,205 @@
     </div>
 
     <!-- Projects 섹션 -->
-    <div class="section-wrapper">
-        <section class="section projects" id="projects">
-            <div class="full-width">
-                <div class="section-heading" id="featured-projects-text">Projects</div>
+    <div class="section-wrapper" style="margin: 0 !important; padding: 0 !important;">
+        <section class="section projects" id="projects" style="text-align: center; max-width: none; margin: 60px 0 !important; padding: 40px 0 !important; justify-content: flex-start; width: 100%; min-height: auto !important; background: #f8f9fa;">
+            <div class="full-width" style="text-align: center;">
+                <div class="section-heading" style="font-size: 48px !important; font-weight: 900 !important; text-transform: uppercase !important; letter-spacing: 3px !important; text-align: center !important; margin: 0 auto 40px auto; width: 100%;">PROJECT</div>
                 
-                <div class="project-technologies">
-                    <a id="featured" class="semi-transparent-button with-border white-button" onclick="selected('featured')">주요 프로젝트</a>
-                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">전체</a>
-                    <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('native')">Android</a>
-                    <a id="utility" class="semi-transparent-button with-border white-button" onclick="selected('utility')">유틸리티</a>
-                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">보안</a>
-                    <a id="education" class="semi-transparent-button with-border white-button" onclick="selected('education')">교육</a>
-                </div>
+                <!-- PROJECT 제목 아래 회색 구분선 -->
+                <div style="width: 100%; height: 1px; background-color: #ddd; margin-bottom: 50px; text-align: center;"></div>
 
-                <div class="projects-wrapper">
-                <!-- 프로젝트들이 JavaScript로 채워집니다 -->
+                <div class="android-projects-container" style="text-align: left; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                    <!-- PillCare Project -->
+                    <div style="display: flex; align-items: flex-start; gap: 40px; margin: 0 0 80px 0; padding: 30px 30px 30px 30px; border-left: 6px solid #4CAF50; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                        <div style="flex: 0 0 280px; display: flex; flex-direction: column; align-items: flex-start;">
+                            <!-- 프로젝트 정보 -->
+                            <div style="text-align: left; margin-bottom: 40px; margin-left: 0px;">
+                                <h3 style="font-size: 32px; font-weight: 900; color: #000; margin: 0;">PillCare</h3>
+                                <div style="font-size: 18px; color: #666; margin-top: 8px;">2025.03 - ing</div>
+                            </div>
+                            <!-- 핸드폰 목업 -->
+                            <div class="phone-frame" style="align-self: flex-start; margin: 0 !important; margin-left: 0 !important;">
+                                <div class="phone-screen">
+                                    <img src="assets/images/PillCare-screen.png" alt="PillCare 앱 스크린샷" style="object-fit: fill; width: 100%; height: 100%;">
+                                </div>
+                                <div class="phone-button"></div>
+                            </div>
+                        </div>
+                        
+                        <div style="flex: 1; min-width: 0; margin-top: 118px;">
+                            <div style="margin-bottom: 20px;">
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;">
+                                    <span class="badge android-badge">Android App</span>
+                                    <span class="badge capstone-badge">Capstone Project</span>
+                                </div>
+                            </div>
+                            
+                            <p id="pillcare-desc" style="font-size: 18px; line-height: 1.6; color: #000; margin-bottom: 25px; font-weight: 500;">
+                                고령층이 약 복용 시간을 놓치지 않도록 돕는 스마트 복약 관리 앱으로,<br>
+                                사용자 친화적인 UI와 정확한 알림 시스템으로 건강한 복약 습관을 지원합니다.
+                            </p>
+                            
+                            <div style="margin-bottom: 40px;">
+                                <h4 style="color: #4CAF50; margin: 20px 0 10px 0; font-size: 20px; font-weight: bold;">Tech Stack</h4>
+                                <div class="tech-chips">
+                                    <span class="tech-chip kotlin">Kotlin</span>
+                                    <span class="tech-chip android">Android</span>
+                                    <span class="tech-chip compose">Jetpack Compose</span>
+                                    <span class="tech-chip room">Room Database</span>
+                                    <span class="tech-chip retrofit">Retrofit</span>
+                                    <span class="tech-chip coroutine">Coroutine</span>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="color: #4CAF50; margin: 20px 0 10px 0; font-size: 20px; font-weight: bold;">What I did</h4>
+                                <ul style="margin: 0; padding-left: 0; list-style: none;">
+                                    <li id="pillcare-tech1" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Jetpack Compose + XML 하이브리드 UI</li>
+                                    <li id="pillcare-tech2" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• RecyclerView 중첩 구조로 직관적 UI 구성</li>
+                                    <li id="pillcare-tech3" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Room Database 기반 로컬 데이터 저장</li>
+                                    <li id="pillcare-tech4" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Retrofit + Coroutine 비동기 API 통신 구현</li>
+                                    <li id="pillcare-tech5" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• 정확한 복약 시간 알림 및 스케줄 관리</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <a href="https://github.com/Sungjincc/PillCare" class="github-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                
+                <!-- 프로젝트 구분선 -->
+                <div style="width: 100%; height: 1px; background-color: #ddd; margin: 60px 0;"></div>
+
+                <div class="android-projects-container" style="text-align: left; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                    <!-- LawRo Project -->
+                    <div style="display: flex; align-items: flex-start; gap: 40px; margin: 0 0 80px 0; padding: 30px 30px 30px 30px; border-left: 6px solid #1976D2; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                        <div style="flex: 0 0 280px; display: flex; flex-direction: column; align-items: flex-start;">
+                            <!-- 프로젝트 정보 -->
+                            <div style="text-align: left; margin-bottom: 40px; margin-left: 0px;">
+                                <h3 style="font-size: 32px; font-weight: 900; color: #000; margin: 0;">LawRo</h3>
+                                <div style="font-size: 18px; color: #666; margin-top: 8px;">2025.03 - 2025.06</div>
+                            </div>
+                            <!-- 핸드폰 목업 -->
+                            <div class="phone-frame" style="align-self: flex-start; margin: 0 !important; margin-left: 0 !important;">
+                                <div class="phone-screen">
+                                    <img src="assets/images/lawro-screen.png" alt="LawRo 앱 스크린샷" style="object-fit: fill; width: 100%; height: 100%;">
+                                </div>
+                                <div class="phone-button"></div>
+                            </div>
+                        </div>
+                        
+                        <div style="flex: 1; min-width: 0; margin-top: 118px;">
+                            <div style="margin-bottom: 20px;">
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px;">
+                                    <span class="badge android-badge">Android App</span>
+                                    <span class="badge" style="background: #1976D2; color: white; padding: 8px 16px; border-radius: 15px; font-size: 14px; font-weight: bold; display: inline-flex; align-items: center; justify-content: center;">TABA Project</span>
+                                    <span class="badge team-badge">Team Leader</span>
+                                    <span class="badge award-badge">최우수상</span>
+                                </div>
+                            </div>
+                            
+                            <p id="lawro-desc" style="font-size: 18px; line-height: 1.6; color: #000; margin-bottom: 25px; font-weight: 500;">
+                                외국인 근로자의 권리를 스스로 점검할 수 있도록 돕는 AI기반 계약서 분석 서비스 앱으로,<br>
+                                언어 장벽을 해결하고 안전한 근로 환경 조성을 돕는 프로젝트입니다.
+                            </p>
+                            
+                            <div style="margin-bottom: 40px;">
+                                <h4 style="color: #1976D2; margin: 20px 0 10px 0; font-size: 20px; font-weight: bold;">Tech Stack</h4>
+                                <div class="tech-chips">
+                                    <span class="tech-chip kotlin">Kotlin</span>
+                                    <span class="tech-chip android">Android</span>
+                                    <span class="tech-chip compose">Jetpack Compose</span>
+                                    <span class="tech-chip mvvm">MVVM</span>
+                                    <span class="tech-chip retrofit">Retrofit</span>
+                                    <span class="tech-chip coroutines">Coroutine</span>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px;">
+                                <h4 style="color: #1976D2; margin: 20px 0 10px 0; font-size: 20px; font-weight: bold;">What I did</h4>
+                                <ul style="margin: 0; padding-left: 0; list-style: none;">
+                                    <li id="lawro-tech1" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Jetpack Compose 100% 네이티브 UI 구현</li>
+                                    <li id="lawro-tech2" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• 6개국 다국어 지원 시스템 구축 (KR/US/JP/CN/TH/VN)</li>
+                                    <li id="lawro-tech3" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• MVVM + Repository 패턴 Clean Architecture 설계</li>
+                                    <li id="lawro-tech4" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Retrofit + Coroutine 비동기 API 통신 구현</li>
+                                    <li id="lawro-tech5" style="padding: 8px 0; color: #000; font-size: 18px; line-height: 1.5; font-weight: 500;">• Naver Maps SDK 실시간 위치 기반 서비스 구축</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <a href="https://github.com/Sungjincc/LawRo" class="github-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- LawRo 프로젝트 아래 회색선 -->
+                <div style="width: 100%; height: 1px; background-color: #ddd; margin: 60px 0 0 0;"></div>
             </div>
         </section>
     </div>
 
     <!-- Contact 섹션 -->
     <div class="section-wrapper">
-        <section class="section extra" id="extra">
-            <div>
-                <div class="section-heading" id="chat-text">연락처</div>
-                <p class="paragraph-text justify-text">
-                    안드로이드 개발 관련 프로젝트나 협업에 관심이 있으시다면 언제든지 연락 주세요! 새로운 기술에 대한 이야기나 개발 경험을 나누는 것을 좋아합니다.
+        <section class="section extra" id="contact" style="justify-content: center !important; align-items: center !important; max-width: 100% !important; margin: 0 0 !important; padding: 20px 60px 40px 60px !important; min-height: 400px !important; height: auto !important;">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="section-heading" style="font-size: 48px !important; font-weight: 900 !important; text-transform: uppercase !important; letter-spacing: 3px !important; text-align: center !important; margin-bottom: 5px;">CONTACT</div>
+                
+                <p class="paragraph-text justify-text" style="font-size: 18px; color: #666; line-height: 1.8; margin-bottom: 40px;">
+                    제 이력이나 프로젝트에 대해 궁금하신 점이 있다면, 아래 연락처로 편하게 문의해 주세요.
                 </p>
-                <p class="paragraph-text justify-text">
-                    언제든지 편하게 연락주세요: <a href="mailto:chltjdwls294@naver.com">chltjdwls294@naver.com</a>. 빠른 시일 내에 답변드리겠습니다.
-                </p>
-                <p class="paragraph-text justify-text">
-                    제 GitHub에서 더 많은 프로젝트와 코드를 확인하실 수 있습니다.
-                </p>
-                <div class="extra-links">
-                    <span class="hint--bottom bottom-link" aria-label="이메일">
-                        <a href="mailto:chltjdwls294@naver.com"><i class="head-icon fas fa-envelope"></i></a>
-                    </span>
-                    <span class="hint--bottom bottom-link" aria-label="GitHub">
-                        <a href="https://github.com/Sungjincc"><i class="head-icon fab fa-github"></i></a>
-                    </span>
-                    <span class="hint--bottom bottom-link" aria-label="블로그">
-                        <a href="https://Sungjincc.github.io/"><i class="head-icon fas fa-rss"></i></a>
-                    </span>
+                
+                <!-- 연락처 정보 카드 -->
+                <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin: 40px 0; text-align: left; max-width: 600px; margin: 40px auto;">
+                    <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                        <i class="fas fa-phone" style="color: #4CAF50; margin-right: 20px; width: 25px; font-size: 20px;"></i>
+                        <div>
+                            <strong style="color: #333; font-size: 16px;">전화번호</strong><br>
+                            <span style="color: #666; font-size: 18px;">010-9253-2942</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                        <i class="fas fa-envelope" style="color: #2196F3; margin-right: 20px; width: 25px; font-size: 20px;"></i>
+                        <div>
+                            <strong style="color: #333; font-size: 16px;">이메일</strong><br>
+                            <a href="mailto:chltjdwls294@naver.com" style="color: #2196F3; font-size: 18px; text-decoration: none;">chltjdwls294@naver.com</a>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 0; display: flex; align-items: center;">
+                        <i class="fab fa-github" style="color: #333; margin-right: 20px; width: 25px; font-size: 20px;"></i>
+                        <div>
+                            <strong style="color: #333; font-size: 16px;">GitHub</strong><br>
+                            <a href="https://github.com/Sungjincc" style="color: #333; font-size: 18px; text-decoration: none;" target="_blank">github.com/Sungjincc</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
     </div>
+
+    <!-- Copyright 섹션 -->
+    <footer style="background: #e8f4f8; color: #333; text-align: center; padding: 20px 0; font-size: 16px; font-weight: 500;">
+        © 2025. 최성진 All rights reserved
+    </footer>
 
     <!-- JavaScript -->
     <script src="vendor/js/jquery-3.3.1.js"></script>
     <script src="vendor/js/jquery.smooth-scroll.js"></script>
     <script src="vendor/js/css-polyfills.min.js"></script>
     <script src="vendor/js/flexibility.js"></script>
+    <script src="assets/js/language.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/projects.js"></script>
+
 </body>
 </html>
