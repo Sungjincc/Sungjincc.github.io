@@ -69,17 +69,17 @@ const translations = {
     
     jp: {
         // Header
-        title: "チェソンジ - Androidアプリ開発者",
-        name: "- チェソンジ -",
-        occupation: "Androidアプリ開発者",
+        title: "チェソンジン - Androidアプリエンジニア",
+        name: "- チェソンジン -",
+        occupation: "Androidアプリエンジニア",
         greeting: "こんにちは。",
-        description: "ユーザー視点のAndroidアプリ開発者<br/>チェソンジです。",
+        description: "ユーザー視点のAndroidアプリ開発者<br/>チェソンジンです。",
         learnMore: "もっと見る ↓",
         
         // About Section
         aboutTitle: "About",
         nameLabel: "名前",
-        nameValue: "チェソンジ",
+        nameValue: "チェソンジンン",
         birthLabel: "生年月日",
         birthValue: "2000年２月11日",
         locationLabel: "住所",
@@ -91,7 +91,7 @@ const translations = {
         
         // Education
         educationTitle: "学歴",
-        highSchool: "와룡高等学校",
+        highSchool: "臥龍高等学校",
         universityMain: "檀国大学校国際自由専攻学部",
         universitySoftware: "檀国大学校ソフトウェア学科",
         bootcampTitle: "教育",
@@ -126,12 +126,12 @@ const translations = {
         
         // Contact
         contactTitle: "CONTACT",
-        contactDesc: "私の経歴やプロジェクトについてご質問がございましたら、下記の連絡先までお気軽にお問い合わせください。",
+        contactDesc: "経歴やプロジェクトについてご質問がございましたら、お気軽にお問い合わせください。お待ちしております。",
         phoneLabel: "電話番号",
         githubLabel: "GitHub",
         
         // Copyright
-        copyright: "© 2025. チェソンジ All rights reserved"
+        copyright: "© 2025. チェソンジン　All rights reserved"
     },
     
     en: {
@@ -140,7 +140,7 @@ const translations = {
         name: "- Sungjin Choi -",
         occupation: "Android App Developer",
         greeting: "Hello.",
-        description: "User-focused Android App Developer<br/>I'm Sungjin Choi.",
+        description: "User-focused Android App Developer.",
         learnMore: "Learn More ↓",
         
         // About Section
