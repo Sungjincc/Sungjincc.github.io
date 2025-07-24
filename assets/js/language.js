@@ -73,7 +73,7 @@ const translations = {
         name: "- チェソンジン -",
         occupation: "Androidアプリエンジニア",
         greeting: "こんにちは。",
-        description: "ユーザー視点のAndroidアプリ開発者<br/>チェソンジンです。",
+        description: "ユーザー視点のAndroidアプリエンジニア<br/>チェソンジンです。",
         learnMore: "もっと見る ↓",
         
         // About Section
@@ -103,7 +103,7 @@ const translations = {
         coreSkills: "主力技術",
         learningSkills: "学習技術",
         collaboration: "協業ツール",
-        devEnvironment: "開発環境",
+        devEnvironment: "IDE",
         
         // Projects
         projectsTitle: "PROJECT",
